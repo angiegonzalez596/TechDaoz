@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - TechDaoz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="catalog-header">
+        <a href="index.html" class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo TechDaoz">
+            <span>TechDaoz</span>
+        </a>
+        
+        <nav class="catalog-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="user.html">Iniciar sesión</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i><span class="carrito-count">3</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="section-title">
+            <h2>Nuestro Catálogo Completo</h2>
+        </div>
+        
+        <div class="catalog-filters">
+            <div class="filter-group">
+                <h4>Categorías</h4>
+                <div class="filter-options">
+                    <div class="filter-option active">Todos</div>
+                    <div class="filter-option">Celulares</div>
+                    <div class="filter-option">Accesorios</div>
+                    <div class="filter-option">Audio</div>
+                    <div class="filter-option">Almacenamiento</div>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Marcas</h4>
+                <div class="filter-options">
+                    <div class="filter-option active">Todas</div>
+                    <div class="filter-option">Xiaomi</div>
+                    <div class="filter-option">Samsung</div>
+                    <div class="filter-option">Oppo</div>
+                    <div class="filter-option">JBL</div>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Precio</h4>
+                <div class="filter-options">
+                    <div class="filter-option active">Todos</div>
+                    <div class="filter-option">Menos de $200k</div>
+                    <div class="filter-option">$200k - $500k</div>
+                    <div class="filter-option">$500k - $1M</div>
+                    <div class="filter-option">Más de $1M</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="products-container">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('imagenes/smart.png');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Xiaomi Redmi Watch 5 Active</h3>
+                    <p class="product-price">$170.900</p>
+                    <p class="product-description">Smartwatch con llamadas Bluetooth, monitor de actividad, resistencia al agua y batería de larga duración.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('imagenes/ceular.png');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Samsung Galaxy A15 4G</h3>
+                    <p class="product-price">$699.900</p>
+                    <p class="product-description">Dual SIM 256 GB azul oscuro 8 GB RAM, pantalla Super AMOLED de 6.5", cámara cuádruple de 50MP.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('imagenes/audifonos.png');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Audífonos JBL Tune 510BT</h3>
+                    <p class="product-price">$199.900</p>
+                    <p class="product-description">Inalámbricos con sonido JBL Pure Bass, batería de 40 horas, Bluetooth 5.0 y diseño plegable.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('imagenes/memoria.png');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Memoria Kingston 128GB</h3>
+                    <p class="product-price">$89.900</p>
+                    <p class="product-description">MicroSD Clase 10, velocidad de transferencia hasta 100MB/s, ideal para smartphones y cámaras.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/300x200?text=Producto+5');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Xiaomi Redmi Note 12</h3>
+                    <p class="product-price">$899.900</p>
+                    <p class="product-description">Smartphone con pantalla AMOLED de 120Hz, cámara de 50MP y batería de 5000mAh.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/300x200?text=Producto+6');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Oppo Reno 8</h3>
+                    <p class="product-price">$1.199.900</p>
+                    <p class="product-description">Diseño premium, cámara Sony IMX766, carga súper rápida de 80W y procesador Dimensity 1300.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/300x200?text=Producto+7');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Samsung Galaxy Buds 2</h3>
+                    <p class="product-price">$499.900</p>
+                    <p class="product-description">Audífonos inalámbricos con cancelación activa de ruido y sonido AKG.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/300x200?text=Producto+8');"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Disco Duro SSD 1TB</h3>
+                    <p class="product-price">$399.900</p>
+                    <p class="product-description">SSD SATA III con velocidades de hasta 550MB/s, ideal para mejorar el rendimiento de tu PC.</p>
+                    <a href="#" class="product-button">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre TechDaoz</h3>
+                <p>Somos una tienda especializada en tecnología de vanguardia, ofreciendo los mejores productos al mejor precio.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Nuevos Productos</a>
+                <a href="user.html">Mi Cuenta</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Información de Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle 123 #45-67, Bogotá</p>
+                <p><i class="fas fa-phone"></i> +57 1 2345678</p>
+                <p><i class="fas fa-envelope"></i> info@techdaoz.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 TechDaoz. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
