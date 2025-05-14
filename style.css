@@ -317,4 +317,12 @@ footer {
     object-fit: contain; /* o "cover" según preferencia */
     height: 200px; /* fuerza una altura uniforme */
   }
-  
+  .footer-social a i {
+  color: #ffcc00; /* Azul claro o el color que desees */
+  transition: color 0.3s ease;
+}
+
+.footer-social a i:hover {
+  color: #836903; /* Color al pasar el mouse */
+}
+ 
