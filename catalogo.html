@@ -46,6 +46,21 @@
     <h1 class="text-dark">Descubre la mejor tecnología al mejor precio</h1>
     <p class="lead text-dark">Explora nuestra selección de productos más vendidos y encuentra lo que necesitas</p>
   </div>
+<!-- Filtro por categoría -->
+<div class="mb-4 text-center">
+  <label for="categoriaSelect" class="form-label h5">Filtrar por categoría:</label>
+  <select id="categoriaSelect" class="form-select w-auto d-inline-block">
+    <option value="todos">Todos</option>
+    <option value="smartwatch">Smartwatches</option>
+    <option value="celulares">Celulares</option>
+    <option value="camaras">Cámaras</option>
+    <option value="teclados">Teclados</option>
+    <option value="apple">Apple</option>
+    <option value="videojuegos">Videojuegos</option>
+    <option value="televisores">Televisores</option>
+    <option value="belleza">Cuidado personal</option>
+  </select>
+</div>
 
   <!-- Catálogo -->
   <div class="container my-5">
@@ -54,7 +69,7 @@
 
       <!-- Producto -->
       <div class="col">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 d-flex flex-column shadow-sm">
           <img src="imagenes/smart.png" class="card-img-top" alt="Xiaomi Watch">
           <div class="card-body">
             <h5 class="card-title">Xiaomi Redmi Watch 5 Active</h5>
@@ -66,10 +81,11 @@
           </div>
         </div>
       </div>
+      
 
       <!-- Repite esto por cada producto cambiando la info -->
       <div class="col">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 d-flex flex-column shadow-sm">
           <img src="imagenes/ceular.png" class="card-img-top" alt="Samsung A15">
           <div class="card-body">
             <h5 class="card-title">Samsung Galaxy A15 4G</h5>
@@ -81,6 +97,87 @@
           </div>
         </div>
       </div>
+      <div class="col">
+        <div class="card h-100 d-flex flex-column shadow-sm">
+          <img src="imagenes/camara.png" class="card-img-top" alt="Cámara Canon">
+          <div class="card-body">
+            <h5 class="card-title">Canon EOS Rebel T7</h5>
+            <p class="card-text">Cámara réflex digital con lente 18-55mm, Wi-Fi integrado y grabación en Full HD.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <span class="fw-bold">$2.099.000</span>
+            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 d-flex flex-column shadow-sm">
+          <img src="imagenes/teclado_mecanico.png" class="card-img-top" alt="Teclado mecánico Razer">
+          <div class="card-body">
+            <h5 class="card-title">Razer Huntsman Mini</h5>
+            <p class="card-text">Teclado mecánico compacto con switches opto-mecánicos, retroiluminación RGB.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <span class="fw-bold">$1.299.000</span>
+            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 d-flex flex-column shadow-sm">
+          <img src="imagenes/iphone13.png" class="card-img-top" alt="iPhone 13 Pro">
+          <div class="card-body">
+            <h5 class="card-title">iPhone 13 Pro</h5>
+            <p class="card-text">Pantalla OLED de 6.1", procesador A15 Bionic, cámara triple de 12MP, 256 GB.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <span class="fw-bold">$4.599.000</span>
+            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 d-flex flex-column shadow-sm">
+          <img src="imagenes/switch.png" class="card-img-top" alt="Nintendo Switch">
+          <div class="card-body">
+            <h5 class="card-title">Nintendo Switch</h5>
+            <p class="card-text">Consola híbrida que funciona como portátil y de sobremesa, incluye 32 GB de almacenamiento.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <span class="fw-bold">$1.199.000</span>
+            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 d-flex flex-column shadow-sm">
+          <img src="imagenes/samsung_qled.png" class="card-img-top" alt="Samsung QLED 55">
+          <div class="card-body">
+            <h5 class="card-title">Samsung QLED 55" 4K</h5>
+            <p class="card-text">Televisor QLED con resolución 4K, tecnología de imagen avanzada y sonido Dolby Digital Plus.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <span class="fw-bold">$3.499.000</span>
+            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 d-flex flex-column shadow-sm">
+          <img src="imagenes/plancha_remington.png" class="card-img-top" alt="Plancha Remington Shine Therapy">
+          <div class="card-body">
+            <h5 class="card-title">Remington Shine Therapy</h5>
+            <p class="card-text">Plancha de cabello con placas de cerámica y microacondicionadores para un alisado suave y brillante.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <span class="fw-bold">$225.0x00</span>
+            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      
+      
 
       <!-- Puedes seguir duplicando las tarjetas con tus otros productos -->
 
@@ -139,5 +236,38 @@
       document.getElementById("resultado-busqueda").innerHTML = `Resultados para: <strong>${query}</strong>`;
     }
   </script>
+  <script>
+  document.getElementById("categoriaSelect").addEventListener("change", function () {
+    const seleccion = this.value;
+    const productos = document.querySelectorAll('#product-list .col');
+
+    productos.forEach(function (producto) {
+      const categoria = producto.dataset.categoria;
+
+      if (seleccion === "todos" || categoria === seleccion) {
+        producto.style.display = "block";
+      } else {
+        producto.style.display = "none";
+      }
+    });
+  });
+</script>
+<script>
+  document.getElementById("categoriaSelect").addEventListener("change", function () {
+    const seleccion = this.value;
+    const productos = document.querySelectorAll('#product-list .col');
+
+    productos.forEach(function (producto) {
+      const categoria = producto.dataset.categoria;
+
+      if (seleccion === "todos" || categoria === seleccion) {
+        producto.style.display = "block";
+      } else {
+        producto.style.display = "none";
+      }
+    });
+  });
+</script>
+
 </body>
 </html>

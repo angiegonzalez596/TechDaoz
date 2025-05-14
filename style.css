@@ -295,3 +295,26 @@ footer {
   padding: 5px 10px; /* Opcional: para darle más espacio alrededor del nombre */
   border-radius: 5px; /* Opcional: para bordes redondeados */
 }
+/* Tarjetas con layout vertical completo */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Cuerpo del producto ocupa el espacio restante */
+  .card-body {
+    flex-grow: 1;
+  }
+  
+  /* Pie de tarjeta se queda en la parte inferior */
+  .card-footer {
+    margin-top: auto;
+  }
+  
+  /* Imágenes con altura máxima y comportamiento uniforme */
+  .card-img-top {
+    object-fit: contain; /* o "cover" según preferencia */
+    height: 200px; /* fuerza una altura uniforme */
+  }
+  
