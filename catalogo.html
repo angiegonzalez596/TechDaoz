@@ -55,127 +55,593 @@
     <option value="celulares">Celulares</option>
     <option value="camaras">Cámaras</option>
     <option value="teclados">Teclados</option>
-    <option value="apple">Apple</option>
     <option value="videojuegos">Videojuegos</option>
     <option value="televisores">Televisores</option>
     <option value="belleza">Cuidado personal</option>
   </select>
 </div>
 
-  <!-- Catálogo -->
-  <div class="container my-5">
-    <h2 id="resultado-busqueda" class="mb-4 text-center"></h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="product-list">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="product-list">
 
-      <!-- Producto -->
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/smart.png" class="card-img-top" alt="Xiaomi Watch">
-          <div class="card-body">
-            <h5 class="card-title">Xiaomi Redmi Watch 5 Active</h5>
-            <p class="card-text">Smartwatch con llamadas Bluetooth, monitor de actividad y batería duradera.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$170.900</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+  <!-- Producto: Smartwatch -->
+  <div class="col" data-categoria="smartwatch">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/smart.png" class="card-img-top" alt="Xiaomi Watch">
+      <div class="card-body">
+        <h5 class="card-title">Xiaomi Redmi Watch 5 Active</h5>
+        <p class="card-text">Smartwatch con llamadas Bluetooth, monitor de actividad y batería duradera.</p>
       </div>
-      
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$170.900</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+      </div>
+    </div>
+  </div>
 
-      <!-- Repite esto por cada producto cambiando la info -->
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/ceular.png" class="card-img-top" alt="Samsung A15">
-          <div class="card-body">
-            <h5 class="card-title">Samsung Galaxy A15 4G</h5>
-            <p class="card-text">Dual SIM 256 GB, pantalla Super AMOLED, cámara de 50MP.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$699.900</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+  <!-- Producto: Celular -->
+  <div class="col" data-categoria="celulares">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/ceular.png" class="card-img-top" alt="Samsung A15">
+      <div class="card-body">
+        <h5 class="card-title">Samsung Galaxy A15 4G</h5>
+        <p class="card-text">Dual SIM 256 GB, pantalla Super AMOLED, cámara de 50MP.</p>
       </div>
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/camara.png" class="card-img-top" alt="Cámara Canon">
-          <div class="card-body">
-            <h5 class="card-title">Canon EOS Rebel T7</h5>
-            <p class="card-text">Cámara réflex digital con lente 18-55mm, Wi-Fi integrado y grabación en Full HD.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$2.099.000</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$699.900</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
       </div>
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/teclado_mecanico.png" class="card-img-top" alt="Teclado mecánico Razer">
-          <div class="card-body">
-            <h5 class="card-title">Razer Huntsman Mini</h5>
-            <p class="card-text">Teclado mecánico compacto con switches opto-mecánicos, retroiluminación RGB.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$1.299.000</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+    </div>
+  </div>
+
+  <!-- Producto: Cámara -->
+  <div class="col" data-categoria="camaras">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/camara.png" class="card-img-top" alt="Cámara Canon">
+      <div class="card-body">
+        <h5 class="card-title">Canon EOS Rebel T7</h5>
+        <p class="card-text">Cámara réflex digital con lente 18-55mm, Wi-Fi integrado y grabación en Full HD.</p>
       </div>
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/iphone13.png" class="card-img-top" alt="iPhone 13 Pro">
-          <div class="card-body">
-            <h5 class="card-title">iPhone 13 Pro</h5>
-            <p class="card-text">Pantalla OLED de 6.1", procesador A15 Bionic, cámara triple de 12MP, 256 GB.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$4.599.000</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$2.099.000</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
       </div>
-      
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/switch.png" class="card-img-top" alt="Nintendo Switch">
-          <div class="card-body">
-            <h5 class="card-title">Nintendo Switch</h5>
-            <p class="card-text">Consola híbrida que funciona como portátil y de sobremesa, incluye 32 GB de almacenamiento.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$1.199.000</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+    </div>
+  </div>
+
+  <!-- Producto: Teclado -->
+  <div class="col" data-categoria="teclados">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/teclado_mecanico.png" class="card-img-top" alt="Teclado mecánico Razer">
+      <div class="card-body">
+        <h5 class="card-title">Razer Huntsman Mini</h5>
+        <p class="card-text">Teclado mecánico compacto con switches opto-mecánicos, retroiluminación RGB.</p>
       </div>
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/samsung_qled.png" class="card-img-top" alt="Samsung QLED 55">
-          <div class="card-body">
-            <h5 class="card-title">Samsung QLED 55" 4K</h5>
-            <p class="card-text">Televisor QLED con resolución 4K, tecnología de imagen avanzada y sonido Dolby Digital Plus.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$3.499.000</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$1.299.000</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
       </div>
-      <div class="col">
-        <div class="card h-100 d-flex flex-column shadow-sm">
-          <img src="imagenes/plancha_remington.png" class="card-img-top" alt="Plancha Remington Shine Therapy">
-          <div class="card-body">
-            <h5 class="card-title">Remington Shine Therapy</h5>
-            <p class="card-text">Plancha de cabello con placas de cerámica y microacondicionadores para un alisado suave y brillante.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-between align-items-center">
-            <span class="fw-bold">$225.000</span>
-            <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
-          </div>
-        </div>
+    </div>
+  </div>
+
+  <!-- Producto: Apple -->
+  <div class="col" data-categoria="celulares">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/iphone13.png" class="card-img-top" alt="iPhone 13 Pro">
+      <div class="card-body">
+        <h5 class="card-title">iPhone 13 Pro</h5>
+        <p class="card-text">Pantalla OLED de 6.1", procesador A15 Bionic, cámara triple de 12MP, 256 GB.</p>
       </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$4.599.000</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto: Videojuegos -->
+  <div class="col" data-categoria="videojuegos">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/switch.png" class="card-img-top" alt="Nintendo Switch">
+      <div class="card-body">
+        <h5 class="card-title">Nintendo Switch</h5>
+        <p class="card-text">Consola híbrida que funciona como portátil y de sobremesa, incluye 32 GB de almacenamiento.</p>
+      </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$1.199.000</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto: Televisor -->
+  <div class="col" data-categoria="televisores">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/samsung_qled.png" class="card-img-top" alt="Samsung QLED 55">
+      <div class="card-body">
+        <h5 class="card-title">Samsung QLED 55" 4K</h5>
+        <p class="card-text">Televisor QLED con resolución 4K, tecnología de imagen avanzada y sonido Dolby Digital Plus.</p>
+      </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$3.499.000</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto: Belleza -->
+  <div class="col" data-categoria="belleza">
+    <div class="card h-100 d-flex flex-column shadow-sm">
+      <img src="imagenes/plancha_remington.png" class="card-img-top" alt="Plancha Remington Shine Therapy">
+      <div class="card-body">
+        <h5 class="card-title">Remington Shine Therapy</h5>
+        <p class="card-text">Plancha de cabello con placas de cerámica y microacondicionadores para un alisado suave y brillante.</p>
+      </div>
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <span class="fw-bold">$225.000</span>
+        <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+      </div>
+    </div>
+  </div>
+  <div class="col" data-categoria="smartwatch">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/amazfit_bip5.png" class="card-img-top" alt="Amazfit Bip 5">
+    <div class="card-body">
+      <h5 class="card-title">Amazfit Bip 5</h5>
+      <p class="card-text">Pantalla grande, monitoreo de salud 24/7, GPS integrado y llamadas Bluetooth.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$289.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="smartwatch">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/huawei_watch_fit2.png" class="card-img-top" alt="Huawei Watch Fit 2">
+    <div class="card-body">
+      <h5 class="card-title">Huawei Watch Fit 2</h5>
+      <p class="card-text">Pantalla AMOLED, seguimiento deportivo avanzado, asistente personal y GPS.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$399.900</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="camaras">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/sony_zv_e10.png" class="card-img-top" alt="Sony ZV-E10">
+    <div class="card-body">
+      <h5 class="card-title">Sony ZV-E10</h5>
+      <p class="card-text">Perfecta para vlogging, con sensor APS-C de 24.2 MP, enfoque automático rápido y pantalla giratoria.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$3.499.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+
+<div class="col" data-categoria="smartwatch">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/galaxy_watch6.png" class="card-img-top" alt="Samsung Galaxy Watch 6">
+    <div class="card-body">
+      <h5 class="card-title">Samsung Galaxy Watch 6</h5>
+      <p class="card-text">Diseño elegante, ECG, presión arterial, entrenamiento automático y más.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$1.499.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+
+<div class="col" data-categoria="smartwatch">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/apple_watch_se.png" class="card-img-top" alt="Apple Watch SE 2da Gen">
+    <div class="card-body">
+      <h5 class="card-title">Apple Watch SE (2da Gen)</h5>
+      <p class="card-text">Gran rendimiento, detección de accidentes, llamadas y mensajes desde la muñeca.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$1.299.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="smartwatch">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/haylou_rt3.png" class="card-img-top" alt="Haylou RT3">
+    <div class="card-body">
+      <h5 class="card-title">Haylou Solar Plus RT3</h5>
+      <p class="card-text">Pantalla AMOLED de 1.43", llamadas por Bluetooth, 105 modos deportivos y monitoreo completo.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$210.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="celulares">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/iphone_15_pro_max.png" class="card-img-top" alt="iPhone 15 Pro Max">
+    <div class="card-body">
+      <h5 class="card-title">iPhone 15 Pro Max</h5>
+      <p class="card-text">Titanio, chip A17 Pro, cámara de 48 MP, USB-C y rendimiento de otro nivel.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$6.799.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="celulares">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/galaxy_s24_ultra.png" class="card-img-top" alt="Samsung Galaxy S24 Ultra">
+    <div class="card-body">
+      <h5 class="card-title">Galaxy S24 Ultra</h5>
+      <p class="card-text">Pantalla QHD+ 6.8", Snapdragon 8 Gen 3, cámara 200 MP, S-Pen incluido.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$6.499.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="celulares">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/redmi_note_13_proplus.png" class="card-img-top" alt="Redmi Note 13 Pro+">
+    <div class="card-body">
+      <h5 class="card-title">Redmi Note 13 Pro+</h5>
+      <p class="card-text">Pantalla AMOLED 1.5K, carga 120W, cámara 200 MP, chip Dimensity 7200 Ultra.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$1.799.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="celulares">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/moto_edge_40_neo.png" class="card-img-top" alt="Motorola Edge 40 Neo">
+    <div class="card-body">
+      <h5 class="card-title">Motorola Edge 40 Neo</h5>
+      <p class="card-text">Diseño premium con Pantone, pantalla pOLED curva y resistencia IP68.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$1.299.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="camaras">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/canon_eos_r50.png" class="card-img-top" alt="Canon EOS R50">
+    <div class="card-body">
+      <h5 class="card-title">Canon EOS R50</h5>
+      <p class="card-text">Sensor APS-C de 24 MP, grabación 4K 30fps, pantalla táctil abatible, ideal para creadores.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$3.199.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="camaras">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/gopro_hero12.png" class="card-img-top" alt="GoPro HERO12 Black">
+    <div class="card-body">
+      <h5 class="card-title">GoPro HERO12 Black</h5>
+      <p class="card-text">Grabación 5.3K60, HyperSmooth 6.0, sumergible sin carcasa, ideal para deportes extremos.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$2.399.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="camaras">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/nikon_z50.png" class="card-img-top" alt="Nikon Z50">
+    <div class="card-body">
+      <h5 class="card-title">Nikon Z50</h5>
+      <p class="card-text">Cámara sin espejo con sensor DX de 20.9 MP, video 4K y diseño compacto.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$4.199.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="camaras">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/insta360_x4.png" class="card-img-top" alt="Insta360 X4">
+    <div class="card-body">
+      <h5 class="card-title">Insta360 X4</h5>
+      <p class="card-text">Cámara de acción 360° con grabación en 8K, ideal para contenido inmersivo y edición creativa.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$3.799.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+
+<div class="col" data-categoria="teclados">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/logitech_mx_keys.png" class="card-img-top" alt="Logitech MX Keys">
+    <div class="card-body">
+      <h5 class="card-title">Logitech MX Keys</h5>
+      <p class="card-text">Teclado inalámbrico retroiluminado con diseño ergonómico y conectividad multi-dispositivo.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$499.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="teclados">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/razer_blackwidow_v4.png" class="card-img-top" alt="Razer BlackWidow V4">
+    <div class="card-body">
+      <h5 class="card-title">Razer BlackWidow V4</h5>
+      <p class="card-text">Teclado mecánico con switches verdes, iluminación RGB y teclas macro para gamers exigentes.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$779.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="teclados">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/keychron_k6.png" class="card-img-top" alt="Keychron K6">
+    <div class="card-body">
+      <h5 class="card-title">Keychron K6 Wireless</h5>
+      <p class="card-text">Teclado compacto 65% con Bluetooth, retroiluminación RGB y opción de switches intercambiables.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$449.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="teclados">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/logitech_k380.png" class="card-img-top" alt="Logitech K380">
+    <div class="card-body">
+      <h5 class="card-title">Logitech K380</h5>
+      <p class="card-text">Ligero, silencioso y portátil. Ideal para trabajar con laptop, tablet y teléfono vía Bluetooth.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$169.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="teclados">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/corsair_k70_rgb.png" class="card-img-top" alt="Corsair K70 RGB PRO">
+    <div class="card-body">
+      <h5 class="card-title">Corsair K70 RGB PRO</h5>
+      <p class="card-text">Teclado mecánico profesional con switches Cherry MX Red, RGB dinámico y estructura de aluminio.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$689.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="videojuegos">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/zelda_tears.png" class="card-img-top" alt="Zelda Tears of the Kingdom">
+    <div class="card-body">
+      <h5 class="card-title">Zelda: Tears of the Kingdom</h5>
+      <p class="card-text">Explora Hyrule como nunca antes en esta secuela épica de Breath of the Wild para Nintendo Switch.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$279.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="videojuegos">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/god_of_war_ragnarok.png" class="card-img-top" alt="God of War Ragnarok">
+    <div class="card-body">
+      <h5 class="card-title">God of War Ragnarök</h5>
+      <p class="card-text">Acompaña a Kratos y Atreus en una batalla épica contra los dioses nórdicos. Exclusivo para PS5.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$319.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="videojuegos">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/elden_ring.png" class="card-img-top" alt="Elden Ring">
+    <div class="card-body">
+      <h5 class="card-title">Elden Ring</h5>
+      <p class="card-text">Un mundo abierto oscuro y desafiante creado por FromSoftware y George R. R. Martin. Disponible para Xbox y PS5.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$249.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="videojuegos">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/fifa_24.png" class="card-img-top" alt="FIFA 24">
+    <div class="card-body">
+      <h5 class="card-title">FIFA 24</h5>
+      <p class="card-text">La nueva edición del clásico de fútbol, ahora con mejoras de realismo y modo carrera renovado.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$229.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="videojuegos">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/hogwarts_legacy.png" class="card-img-top" alt="Hogwarts Legacy">
+    <div class="card-body">
+      <h5 class="card-title">Hogwarts Legacy</h5>
+      <p class="card-text">Conviértete en estudiante de magia en el siglo XIX y descubre secretos de Hogwarts como nunca antes.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$269.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="televisores">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/samsung_55.png" class="card-img-top" alt="Samsung 55 pulgadas UHD">
+    <div class="card-body">
+      <h5 class="card-title">Samsung Smart TV 55" 4K UHD</h5>
+      <p class="card-text">Disfruta de una experiencia envolvente con colores vibrantes, HDR y acceso a apps como Netflix y Disney+.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$1.799.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="televisores">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/lg_oled_c2.png" class="card-img-top" alt="LG OLED C2 65 pulgadas">
+    <div class="card-body">
+      <h5 class="card-title">LG OLED C2 65"</h5>
+      <p class="card-text">Pantalla OLED con negros puros, Dolby Vision, Dolby Atmos y tasa de refresco de 120Hz. Ideal para cine y gaming.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$4.499.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+
+<div class="col" data-categoria="televisores">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/tcl_roku_50.png" class="card-img-top" alt="TCL 50 pulgadas Roku TV">
+    <div class="card-body">
+      <h5 class="card-title">TCL 50" 4K Roku TV</h5>
+      <p class="card-text">Televisor LED con Roku integrado, fácil de usar, acceso a miles de canales y calidad 4K a excelente precio.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$1.299.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="televisores">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/sony_bravia_xr_75.png" class="card-img-top" alt="Sony Bravia XR 75 pulgadas">
+    <div class="card-body">
+      <h5 class="card-title">Sony Bravia XR 75"</h5>
+      <p class="card-text">Procesador cognitivo XR, imagen realista, sonido inmersivo y tecnología Mini LED de alto contraste.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$7.199.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+
+<div class="col" data-categoria="televisores">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/hisense_43.png" class="card-img-top" alt="Hisense 43 pulgadas FHD">
+    <div class="card-body">
+      <h5 class="card-title">Hisense 43" FHD Smart TV</h5>
+      <p class="card-text">Resolución Full HD con buena relación calidad-precio. Compatible con apps y control por voz.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$899.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+
+<div class="col" data-categoria="belleza">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/philips_afeitadora5000.png" class="card-img-top" alt="Afeitadora Philips Serie 5000">
+    <div class="card-body">
+      <h5 class="card-title">Philips Serie 5000 Wet & Dry</h5>
+      <p class="card-text">Afeitado apurado en seco o húmedo, con cabezales flexibles 360° y batería de larga duración.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$489.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="belleza">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/remington_proair.png" class="card-img-top" alt="Secador Remington Pro Air Turbo">
+    <div class="card-body">
+      <h5 class="card-title">Remington Pro Air Turbo</h5>
+      <p class="card-text">Motor potente, tecnología iónica para menos frizz y accesorios para peinados profesionales.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$219.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="belleza">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/oralb_pro3.png" class="card-img-top" alt="Oral-B Pro 3 eléctrico">
+    <div class="card-body">
+      <h5 class="card-title">Oral-B Pro 3</h5>
+      <p class="card-text">Limpieza profunda con sensor de presión, temporizador y batería de 10 días de duración.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$189.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="belleza">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/braun_silkepil9.png" class="card-img-top" alt="Braun Silk-épil 9">
+    <div class="card-body">
+      <h5 class="card-title">Braun Silk-épil 9 Flex</h5>
+      <p class="card-text">Cabezal flexible para mayor precisión, uso en seco o húmedo, con luz inteligente y múltiples accesorios.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$519.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="col" data-categoria="belleza">
+  <div class="card h-100 d-flex flex-column shadow-sm">
+    <img src="imagenes/wahl_colorpro.png" class="card-img-top" alt="Wahl Color Pro">
+    <div class="card-body">
+      <h5 class="card-title">Wahl Color Pro</h5>
+      <p class="card-text">Cortadora con peines codificados por color, cuchillas de acero inoxidable y diseño ergonómico.</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <span class="fw-bold">$149.000</span>
+      <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div> <!-- Fin de #product-list -->
+
       
       
 
