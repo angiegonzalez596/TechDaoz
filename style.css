@@ -41,6 +41,11 @@ body {
     margin-top: 1rem;
   }
 
+  body {
+  padding-top: 60px; 
+  }
+
+
  .footer-social {
   display: flex;
   gap: 15px;
