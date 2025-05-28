@@ -67,9 +67,27 @@
           </div>
           <button type="submit" class="btn btn-warning auth-button">Iniciar Sesión</button>
           <div class="text-center my-3"><span>o</span></div>
-          <button type="button" class="btn btn-outline-danger social-auth-button"><i class="fab fa-google me-2"></i> Continuar con Google</button>
-          <button type="button" class="btn btn-outline-primary social-auth-button"><i class="fab fa-facebook-f me-2"></i> Continuar con Facebook</button>
-        </form>
+           <!-- Google -->
+<a href="https://accounts.google.com/o/oauth2/v2/auth?
+  client_id=TU_CLIENT_ID_DE_GOOGLE&
+  redirect_uri=TU_URL_DE_REDIRECCION&
+  response_type=code&
+  scope=email profile&
+  access_type=online" 
+  class="btn btn-outline-danger social-auth-button">
+  <i class="fab fa-google me-2"></i> Continuar con Google
+</a>
+
+<!-- Facebook -->
+<a href="https://www.facebook.com/v18.0/dialog/oauth?
+  client_id=TU_APP_ID_DE_FACEBOOK&
+  redirect_uri=TU_URL_DE_REDIRECCION&
+  response_type=code&
+  scope=email" 
+  class="btn btn-outline-primary social-auth-button">
+  <i class="fab fa-facebook-f me-2"></i> Continuar con Facebook
+</a>
+      </div>
       </div>
 
       <!-- Registro -->
@@ -103,6 +121,7 @@
       </div>
     </div>
   </div>
+  
 
   <!-- Footer -->
 <footer class="bg-dark text-white pt-4">
