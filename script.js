@@ -22,8 +22,8 @@ function cargarProductos(apiUrl, contenedorId, searchTerm = '') {
 
                 // Buscar en nombre, descripción y categoría
                 return nombreProducto.includes(term) ||
-                       descripcionProducto.includes(term) ||
-                       categoriaProducto.includes(term);
+                    descripcionProducto.includes(term) ||
+                    categoriaProducto.includes(term);
             });
 
             if (productosFiltrados.length === 0 && searchTerm) {
@@ -54,7 +54,7 @@ function cargarProductos(apiUrl, contenedorId, searchTerm = '') {
         })
         .catch(error => console.error(`Error al obtener productos de ${apiUrl}:`, error));
 }
-                                    //  <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+//  <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
 
 // --- Lógica principal al cargar el DOM ---
 document.addEventListener('DOMContentLoaded', () => {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Validación del formulario de contacto (ya existente) ---
     const form = document.getElementById('contactForm');
     if (form) { // Asegúrate de que el formulario de contacto exista en la página actual
-        form.addEventListener('submit', function(event) {
+        form.addEventListener('submit', function (event) {
             if (!form.checkValidity()) {
                 event.preventDefault();
                 event.stopPropagation();
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             form.classList.add('was-validated');
         }, false);
     }
-    
+
     // Animación para las tarjetas de información (ya existente)
     const infoCards = document.querySelectorAll('.contact-info-card');
     infoCards.forEach(card => {
@@ -129,10 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // function addCar(producto) {
 //     // Agregamos el producto al array global
 //     window.productosCarrito.push(producto);
-    
+
 //     // Mostramos el producto que se acaba de agregar
 //     console.log("Producto recién agregado:", producto);
-    
+
 //     // Mostramos la lista completa
 //     console.log("Lista completa de productos en el carrito:", window.productosCarrito);
 
@@ -147,14 +147,48 @@ if (!localStorage.getItem('productosCarrito')) {
 function addCar(producto) {
     // Obtenemos el array actual
     let productosCarrito = JSON.parse(localStorage.getItem('productosCarrito')) || [];
-    
+
     // Agregamos el producto
     productosCarrito.push(producto);
-    
+
     // Guardamos el array actualizado
     localStorage.setItem('productosCarrito', JSON.stringify(productosCarrito));
-    
+
     // Mostramos en consola
     console.log("Producto recién agregado:", producto);
     console.log("Lista completa de productos en el carrito:", productosCarrito);
 }
+
+// function addCar(producto) {
+//     let productosCarrito = JSON.parse(localStorage.getItem('productosCarrito')) || [];
+
+//     // Verificar si el producto ya está en el carrito
+//     const productoExistente = productosCarrito.findIndex(p => p.id === producto.id);
+//         console.log("producto ex",productoExistente);
+
+//     if (productoExistente !== -1) {
+//         console.log("aca entra 1");
+
+//         // Si el producto ya existe, aumentar su cantidad
+//         if (!productosCarrito[productoExistente].cantidad) {
+//             console.log("aca entra 2");
+
+//             productosCarrito[productoExistente].cantidad = 1;
+//         }
+//         productosCarrito[productoExistente].cantidad++;
+//     } else {
+//         console.log("aca entra 3");
+
+//         // Si el producto no existe, agregarlo con cantidad 1
+//         producto.cantidad = 1;
+//         productosCarrito.push(producto);
+//     }
+
+//     localStorage.setItem('productosCarrito', JSON.stringify(productosCarrito));
+
+//     // Mostrar mensaje de confirmación
+//     // alert(`¡${producto.nombre} agregado al carrito!`);
+//     // Mostramos en consola
+//     console.log("Producto recién agregado:", producto);
+//     console.log("Lista completa de productos en el carrito:", productosCarrito);
+// }
