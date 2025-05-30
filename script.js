@@ -44,7 +44,7 @@ function cargarProductos(apiUrl, contenedorId, searchTerm = '') {
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span class="fw-bold">$${producto.precio.toLocaleString('es-CO')}</span>
-                                    <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
+                                     <a  class="btn btn-outline-primary btn-sm"  onclick='addCar(${JSON.stringify(producto).replace(/'/g, "&#39;")})'>Añadir al carrito</a>
                                 </div>
                             </div>
                         </div>
@@ -54,6 +54,7 @@ function cargarProductos(apiUrl, contenedorId, searchTerm = '') {
         })
         .catch(error => console.error(`Error al obtener productos de ${apiUrl}:`, error));
 }
+                                    //  <a href="#" class="btn btn-outline-primary btn-sm">Añadir al carrito</a>
 
 // --- Lógica principal al cargar el DOM ---
 document.addEventListener('DOMContentLoaded', () => {
@@ -119,3 +120,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// // Primero creamos el array global
+// window.productosCarrito = [];
+
+
+// // Modificamos la función addCar
+// function addCar(producto) {
+//     // Agregamos el producto al array global
+//     window.productosCarrito.push(producto);
+    
+//     // Mostramos el producto que se acaba de agregar
+//     console.log("Producto recién agregado:", producto);
+    
+//     // Mostramos la lista completa
+//     console.log("Lista completa de productos en el carrito:", window.productosCarrito);
+
+// }
+
+// En script.js
+// Inicializamos el array
+if (!localStorage.getItem('productosCarrito')) {
+    localStorage.setItem('productosCarrito', JSON.stringify([]));
+}
+
+function addCar(producto) {
+    // Obtenemos el array actual
+    let productosCarrito = JSON.parse(localStorage.getItem('productosCarrito')) || [];
+    
+    // Agregamos el producto
+    productosCarrito.push(producto);
+    
+    // Guardamos el array actualizado
+    localStorage.setItem('productosCarrito', JSON.stringify(productosCarrito));
+    
+    // Mostramos en consola
+    console.log("Producto recién agregado:", producto);
+    console.log("Lista completa de productos en el carrito:", productosCarrito);
+}
